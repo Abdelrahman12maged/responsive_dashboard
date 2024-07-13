@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/View/dashBoardView.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ResponsiveDashBoardApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ResponsiveDashBoardApp extends StatelessWidget {
+  const ResponsiveDashBoardApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      home: DashBoardView(),
     );
   }
 }
